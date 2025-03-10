@@ -23,7 +23,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            
+
         }
 
         .section2 {
@@ -59,36 +59,49 @@
             font-size: 1.5rem;
             color: #000;
         }
-        .put{
+
+        .put {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
+
             background: #fff;
             padding: 10px;
             z-index: 1000;
             text-transform: capitalize;
-            text-size-adjust: 10px;
-            text-align-last: center;
-    
+            justify-content: center;
+            display: flex;
+
+
+
         }
-        .put :hover{
+
+        .put :hover {
             background: #000;
             color: #fff;
             font-size: 1.5rem;
+
+        }
+
+        a {
+            margin: 5px;
+            font-size: 14px;
+            padding: 5px;
+            display: inline-block;
 
         }
     </style>
 </head>
 
 <body>
-    <ul class="put" style="list-style-type: none; display: flex; gap: 15px; align-items: center;  ">
-        <li> <a href="#parallax"><h1>parallax</h1></a></li>
-        <li> <a href="#welcome"><h1>welcome</h1></a></li>
-        <li><a href="#support"><h1>support</h1></a></li>
-        <li><a href="#subscribe"><h1>subscribe</h1></a></li>
+    <ul class="put" style="display: flex; gap: 20px; list-style-type: none; ">
+        <li> <a href="#parallax">parallax </a></li>
+        <li> <a href="#welcome">welcome</a></li>
+        <li><a href="#support">support</a></li>
+        <li><a href="#subscribe">subscribe</a></li>
     </ul>
-    
+
 
 
     <section>
@@ -103,6 +116,7 @@
     </section>
 
 
+
     <section class="section2">
         <div id="welcome">
             <h2>welcome</h2>
@@ -113,6 +127,7 @@
         </div>
     </section>
 
+
     <section class="section3">
         <div id="support">
             <h2>support</h2>
@@ -121,6 +136,7 @@
             </marquee>
         </div>
     </section>
+
 
     <section class="section4">
         <div id="subscribe">
@@ -133,7 +149,8 @@
 
         </div>
     </section>
-   
+
+
 </body>
 
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title> 
+</head>
+<body>
+    <h1><strong>html form</strong></h1>
+    <h2>hello <span style="color: red;">guys</span></h2>
+    <form>
+      
+        <div>
+            <label for="username">username</label> 
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="email">Enter your email</label> 
+            <input type="email" id="email"
+            placeholder="enter your email"
+            required>
+
+        </div>
+        <label for="dob">date of birth</label>
+        <input type="date" name="birthdate">
+        <div>
+            <label for="comment">message</label>
+            <textarea name="comment"
+            rows="10"
+            cols="15" 
+            placeholder="your views"
+            ></textarea>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" type="password">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" >male
+            <input type="radio" name="gender">female
+        </div>
+        <div>
+            <label for="hobbies"> fav hobbies</label>
+            <input type="checkbox" name="intrest" value="music">music
+            <input type="checkbox" name="intrest" value="sports">sports
+        </div>
+        <div>
+            <label for="files">select a file</label>
+            <input type="file" name="file upload" 
+        </div>
+        <div>
+            <label for="color">favourite color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+        <label for="range">range</label>
+        <input type="range" name="range" >
+    </div>
+        <div> 
+            <label for="country"> your country</label>
+            <select name="country" id="country" >
+                <option value="india">india</option>
+                <option value="canada">canada</option>
+                <option value="usa">usa</option>
+            </select>
+        </div>
+        <div>
+            <label for="country">select your country</label>
+            <input type="text" name="country" id="country" list="countries">
+            <datalist id="countries">
+                <option value="usa"></option>
+                <option value="uk"></option>
+                <option value="germany"></option>
+            </datalist>
+        </div>
+        <fieldset>
+            <legend>personal info</legend>
+            <div>
+                <label for="username">username</label> 
+                <input type="text" id="username">
+            </div>
+            <div>
+                <label for="email">Enter your email</label> 
+                <input type="email" id="email"
+                placeholder="enter your email"
+                required>
+    
+            </div>
+
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
