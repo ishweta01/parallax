@@ -1,84 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>parallex project</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    section{
-        height: 100vh;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        background: #f1f1f1;
-        background-image:  url(billa.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .section2{
-        background-image:  url(dog.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .section3{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image:  url(doll.png)
-    }
-    .section4{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image:  url(snip\ photo\ -\ Copy.png)
-    }
-    h2{
-        font-size: 2rem;
-        color: #fff;
-    }
-    p{
-        font-size: 1.5rem;
-        color: #000;
-    }
-    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        section {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background: #f1f1f1;
+            background-image: url(billa.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+        .section2 {
+            background-image: url(dog.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .section3 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(doll.png)
+        }
+
+        .section4 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(duggu.png)
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        summary {
+            font-size: 1.5rem;
+            color: #000;
+        }
+        .put{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding: 10px;
+            z-index: 1000;
+            text-transform: capitalize;
+            text-size-adjust: 10px;
+            text-align-last: center;
+    
+        }
+        .put :hover{
+            background: #000;
+            color: #fff;
+            font-size: 1.5rem;
+
+        }
     </style>
 </head>
+
 <body>
+    <ul class="put" style="list-style-type: none; display: flex; gap: 15px; align-items: center;  ">
+        <li> <a href="#parallax"><h1>parallax</h1></a></li>
+        <li> <a href="#welcome"><h1>welcome</h1></a></li>
+        <li><a href="#support"><h1>support</h1></a></li>
+        <li><a href="#subscribe"><h1>subscribe</h1></a></li>
+    </ul>
+    
+
+
     <section>
-        <div>
-                <h2>Parallax</h2>
+        <div id="parallax">
+            <h2>Parallax</h2>
+            <marquee>
                 <p>hello guys welcome back</p>
-        
+            </marquee>
+
+
         </div>
     </section>
 
+
     <section class="section2">
-        <div >
-                <h2>welcome</h2>
+        <div id="welcome">
+            <h2>welcome</h2>
+            <marquee>
                 <p>if you want to make website like this pls subscribe our channel</p>
+            </marquee>
+
         </div>
     </section>
 
     <section class="section3">
-        <div>
-                <h2>support</h2>
-                <p>if you have follow me then thanku so muchh</p>
+        <div id="support">
+            <h2>support</h2>
+            <marquee>
+                <p>if you have followed me then thanku so muchh</p>
+            </marquee>
         </div>
     </section>
 
     <section class="section4">
-        <div>
-                <h2>subscribe</h2>
+        <div id="subscribe">
+            <details>
+                <summary>
+                    subscribe
+                </summary>
                 <p>byie byieeee</p>
-        
+            </details>
+
         </div>
-    </section>  
+    </section>
+   
 </body>
+
 </html>
