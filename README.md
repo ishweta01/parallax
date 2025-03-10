@@ -3,8 +3,7 @@
 A beautiful parallax scrolling website designed using HTML & CSS.
 
 ## 🚀 Live Demo  
-[Click Here to View](https://ishweta01.github.io/parallax.project/)
-
+[Click Here to View](https://ishweta01.github.io/parallax/)
 ## 🛠 Technologies Used  
 - HTML  
 - CSS  
