@@ -12,7 +12,11 @@
       box-sizing: border-box;
     }
 
-    section {
+    section,
+    .section1,
+    .section2,
+    .section3,
+    .section4{
       height: 100vh;
       width: 100%;
       display: grid;
@@ -101,10 +105,11 @@
 
     @media screen and (max-width: 768px) {
       section,
+      .section1,
       .section2,
       .section3,
       .section4 {
-          background-attachment: fixed;
+          background-attachment: scroll;
         background-position: center;
         background-size: cover;
       }
