@@ -2,136 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parallex project</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        section {
-            height: 100vh;
-            width: 100%;
-            display: grid;
-            place-items: center;
-            text-align: center;
-            background: #f1f1f1;
-            background-image: url(billa.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        }
+    section {
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+      .section1{
+          background-image: url(billa.png);
+      }
 
-        .section2 {
-            background-image: url(dog.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+    .section2 {
+      background-image: url(dog.png);   
+    }
 
-        .section3 {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(doll.png)
-        }
+    .section3 {
+      background-image: url(doll.png);
+    }
 
-        .section4 {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(duggu.png)
-        }
+    .section4 {
+      background-image: url(duggu.png);
+    }
 
-        h2 {
-            font-size: 2rem;
-            color: #fff;
-        }
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
 
-        .scroll-text{
-            animation: slide 12s linear infinite;
-            white-space: nowrap;
-            display: inline-block;
-            font-size: 1.5rem;
-            color: white;
-        }
-        @keyframes slide{
-            form{ transform: translatex(100%)}
-            to{ transform: translatex(-100%)}
-        }
+    .scroll-text {
+      animation: slide 12s linear infinite;
+      white-space: nowrap;
+      display: inline-block;
+      font-size: 1.5rem;
+      color: white;
+    }
 
-        summary {
-            font-size: 1.5rem;
-            color: #000;
-        }
-        .put{
-            position: fixed;
-            left: 50%;transform: translateX(-50%); 
-            gap: 20px;
+    @keyframes slide {
+      from {
+        transform: translateX(100%)
+      }
 
-        }
+      to {
+        transform: translateX(-100%)
+      }
+    }
 
-        a {
-          text-decoration: none;      
-          display: inline-block;    
-          padding: 10px 25px;       
-          margin: 8px 0;              
-          font-size: 16px;            
-          font-weight: bold;           
-          color: white;            
-          background: linear-gradient(135deg, #a07fc4, #2575fc); 
-          border-radius: 8px;          
-          box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-          transition: all 0.4s ease;  
-        }
+    summary {
+      font-size: 1.5rem;
+      color: #000;
+    }
 
-  a:hover {
-         transform: translateY(-5px); 
-         box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-         background: linear-gradient(135deg, #2575fc, #6a11cb);
-       }
-    </style>
+    .put {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 25px;
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #a07fc4, #2575fc);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s ease;
+    }
+
+    a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+
+    @media screen and (max-width: 768px) {
+      section,
+      .section2,
+      .section3,
+      .section4 {
+          background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p,
+      summary {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      a {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+
+      .put {
+        flex-wrap: wrap;
+        top: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <ul class="put" style="display: flex; gap: 20px; list-style-type: none; ">
-        <li><a href="#Home">Home </a></li>
-        <li><a href="#feature">feature</a></li>
-        <li><a href="#Examples">Examples</a></li>
-        <li><a href="#contact">contact</a></li>
-    </ul>
-  <section>
-        <div>
-            <h2>Home</h2>
-                <p class="scroll-text">"Experience the magic of parallax scrolling- where
-                    design comes alive as you move."
-                </p>
-              </div>
-    </section>
-  <section class="section2">
-        <div>
-            <h2>features</h2>
-                <p>parallax makes your website interactive, engaging, and modern with
-                    smooth visual effect.
-                </p>
-        </div>
-    </section>
- <section class="section3">
-        <div>
-            <h2>Examples</h2>
-                <p>scroll down to explore beautiful parallax example and creative design.</p>      
-        </div>
-    </section>
-  <section class="section4">
-        <div>
-            <details>
-                <summary>
-                    Contact
-                </summary>
-                <p>"want to create this type of website? get in touch and let's build together."</p>
-            </details>
-        </div>
-    </section>
+  <ul class="put">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#feature">Features</a></li>
+    <li><a href="#Examples">Examples</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <section class="section1" id="Home">
+    <div>
+      <h2>Home</h2>
+      <p class="scroll-text">"Experience the magic of parallax scrolling — where design comes alive as you move."</p>
+    </div>
+  </section>
+
+  <section class="section2" id="feature">
+    <div>
+      <h2>Features</h2>
+      <p>Parallax makes your website interactive, engaging, and modern with smooth visual effects.</p>
+    </div>
+  </section>
+
+  <section class="section3" id="Examples">
+    <div>
+      <h2>Examples</h2>
+      <p>Scroll down to explore beautiful parallax examples and creative designs.</p>
+    </div>
+  </section>
+
+  <section class="section4" id="contact">
+    <div>
+      <details>
+        <summary>Contact</summary>
+        <p>"Want to create this type of website? Get in touch and let's build together."</p>
+      </details>
+    </div>
+  </section>
 </body>
+
 </html>
