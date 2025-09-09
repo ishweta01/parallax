@@ -11,7 +11,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         section {
             height: 100vh;
             width: 100%;
@@ -50,107 +49,89 @@
             color: #fff;
         }
 
-        p {
+        .scroll-text{
+            animation: slide 12s linear infinite;
+            white-space: nowrap;
+            display: inline-block;
             font-size: 1.5rem;
-            color: #000;
+            color: white;
+        }
+        @keyframes slide{
+            form{ transform: translatex(100%)}
+            to{ transform: translatex(-100%)}
         }
 
         summary {
             font-size: 1.5rem;
             color: #000;
         }
-
-        .put {
+        .put{
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-
-            background: #fff;
-            padding: 10px;
-            z-index: 1000;
-            text-transform: capitalize;
-            justify-content: center;
-            display: flex;
-
-
-
-        }
-
-        .put :hover {
-            background: #000;
-            color: #fff;
-            font-size: 1.5rem;
+            left: 50%;transform: translateX(-50%); 
+            gap: 20px;
 
         }
 
         a {
-            margin: 5px;
-            font-size: 14px;
-            padding: 5px;
-            display: inline-block;
-
+          text-decoration: none;      
+          display: inline-block;    
+          padding: 10px 25px;       
+          margin: 8px 0;              
+          font-size: 16px;            
+          font-weight: bold;           
+          color: white;            
+          background: linear-gradient(135deg, #a07fc4, #2575fc); 
+          border-radius: 8px;          
+          box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+          transition: all 0.4s ease;  
         }
+
+  a:hover {
+         transform: translateY(-5px); 
+         box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+         background: linear-gradient(135deg, #2575fc, #6a11cb);
+       }
     </style>
 </head>
 
 <body>
     <ul class="put" style="display: flex; gap: 20px; list-style-type: none; ">
-        <li> <a href="#parallax">parallax </a></li>
-        <li> <a href="#welcome">welcome</a></li>
-        <li><a href="#support">support</a></li>
-        <li><a href="#subscribe">subscribe</a></li>
+        <li><a href="#Home">Home </a></li>
+        <li><a href="#feature">feature</a></li>
+        <li><a href="#Examples">Examples</a></li>
+        <li><a href="#contact">contact</a></li>
     </ul>
-
-
-
-    <section>
-        <div id="parallax">
-            <h2>Parallax</h2>
-            <marquee>
-                <p>hello welcome back</p>
-            </marquee>
-
-
+  <section>
+        <div>
+            <h2>Home</h2>
+                <p class="scroll-text">"Experience the magic of parallax scrolling- where
+                    design comes alive as you move."
+                </p>
+              </div>
+    </section>
+  <section class="section2">
+        <div>
+            <h2>features</h2>
+                <p>parallax makes your website interactive, engaging, and modern with
+                    smooth visual effect.
+                </p>
         </div>
     </section>
-
-
-
-    <section class="section2">
-        <div id="welcome">
-            <h2>welcome</h2>
-            <marquee>
-                <p>if you want to make website like this pls subscribe our channel</p>
-            </marquee>
-
+ <section class="section3">
+        <div>
+            <h2>Examples</h2>
+                <p>scroll down to explore beautiful parallax example and creative design.</p>      
         </div>
     </section>
-
-
-    <section class="section3">
-        <div id="support">
-            <h2>support</h2>
-            <marquee>
-                <p>if you have followed me then thanku so muchh</p>
-            </marquee>
-        </div>
-    </section>
-
-
-    <section class="section4">
-        <div id="subscribe">
+  <section class="section4">
+        <div>
             <details>
                 <summary>
-                    subscribe
+                    Contact
                 </summary>
-                <p>byie byieeee</p>
+                <p>"want to create this type of website? get in touch and let's build together."</p>
             </details>
-
         </div>
     </section>
-
-
 </body>
-
 </html>
